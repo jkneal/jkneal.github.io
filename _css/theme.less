@@ -1,0 +1,204 @@
+.separator {
+    text-align: center;
+    position: relative;
+}
+
+.separator div {
+    left: 50%;
+    width: 250px;
+    height: 14px;
+    box-shadow: 0 1px #FEE056;
+    margin: 1rem auto 5rem auto;
+}
+
+.separator div:before, .entry div:after {
+    display: block;
+    content: '';
+    position: absolute;
+}
+
+.separator div:before {
+width: 14px;
+height: 14px;
+top: 50%;
+left: 50%;
+background: radial-gradient(ellipse at center, #FEE056 20%, #FFF 20%, #FFF 40%, #FEE056 40%, #FEE056 15%);
+border-radius: 50%;
+}
+
+
+//
+// Load core variables
+// --------------------------------------------------
+
+
+
+//
+// Main
+// --------------------------------------------------
+
+body {
+	background: #f4f4f4;
+    color: #777;
+	font-family:'Raleway',Helvetica,sans-serif;
+    font-weight:300;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+a {
+    color: @second-color;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.featured {
+    color: @third-color;
+}
+.emphasis {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+// Arrow link
+.arrow-link {
+    margin-top: 3rem;
+}
+.icon-right-after {
+    cursor: pointer;
+}
+.icon-right-after:after {
+    color: #e27c3e;
+}
+
+
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+    color: #fff;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+}
+.btn-default {
+  background: @third-color;
+  border: 0;
+}
+
+
+//
+// Home
+// --------------------------------------------------
+.home .row {
+    margin: 3rem 0;
+}
+
+a.icon-right-after {
+    color: #444;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+.about {
+    text-align: center;
+    padding: 0 10rem;
+    
+    h1 {
+        font-size: 3.4rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+        padding: 0;
+    }
+}
+
+.home .row img {
+    float: right;
+}
+
+.home .row .pull-left img {
+    float: left;
+}
+
+//
+// Home Jumbotron
+// --------------------------------------------------
+
+.jumbotron {
+    background: #010222 url('../_assets/home-hero.jpg') no-repeat;
+    color: #fff;
+
+  img {
+    border-radius: 2rem;
+    max-width: 100%;
+  }
+  
+  blockquote {
+      border-left: 0;
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin: 0;
+  }
+  blockquote:before, blockquote:after  {
+      color: #ccc;
+      font-size: 3em;
+      line-height: 0.1em;
+      vertical-align: -0.4em;
+  }
+  blockquote:before {
+      content: open-quote;
+  }
+  blockquote:after {
+      content: close-quote;
+  }
+  cite {
+      display:block;
+      font-size: 2rem;
+      font-style: italic;
+      margin-left: 4rem;
+      
+  }
+  .signup {
+      text-align: center;
+  }
+  .signup label {
+      font-size: 4rem;
+      margin-top: 2rem;
+  }
+  .signup input[type="email"] {
+      border: 0;
+      border-radius: 4px;
+      color: #333;
+      display: inline-block;
+      margin: 1rem 1rem 1rem 0;
+      padding: 1.5rem;
+  }
+  .signup .clear {
+      display: inline-block;
+  }
+}
+

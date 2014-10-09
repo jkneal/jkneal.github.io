@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?94647450');
+  src: url('../fonts/fontello.eot?94647450#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?94647450') format('woff'), url('../fonts/fontello.ttf?94647450') format('truetype'), url('../fonts/fontello.svg?94647450#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?94647450#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+
+  /* remove if not needed */
+
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+}
+.icon-down:before {
+  content: '\e800';
+}
+/* '' */
+.icon-left:before {
+  content: '\e801';
+}
+/* '' */
+.icon-up:before {
+  content: '\e802';
+}
+/* '' */
+.icon-right:before {
+  content: '\e804';
+}
+/* '' */
+.icon-right-after:after {
+  content: '\e804';
+}
+/* '' */.separator {
+  text-align: center;
+  position: relative;
+}
+.separator div {
+  left: 50%;
+  width: 250px;
+  height: 14px;
+  box-shadow: 0 1px #FEE056;
+  margin: 1rem auto 5rem auto;
+}
+.separator div:before,
+.entry div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+.separator div:before {
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  background: radial-gradient(ellipse at center, #fee056 20%, #ffffff 20%, #ffffff 40%, #fee056 40%, #fee056 15%);
+  border-radius: 50%;
+}
+body {
+  background: #f4f4f4;
+  color: #777;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 300;
+}
+h1,
+h2 {
+  color: #333;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+a {
+  color: #b8cad2;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.featured {
+  color: #c0d376;
+}
+.emphasis {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.arrow-link {
+  margin-top: 3rem;
+}
+.icon-right-after {
+  cursor: pointer;
+}
+.icon-right-after:after {
+  color: #e27c3e;
+}
+.btn {
+  color: #fff;
+  font-weight: 500;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+}
+.btn-default {
+  background: #c0d376;
+  border: 0;
+}
+.home .row {
+  margin: 3rem 0;
+}
+a.icon-right-after {
+  color: #444;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+.about {
+  text-align: center;
+  padding: 0 10rem;
+}
+.about h1 {
+  font-size: 3.4rem;
+}
+.about h2 {
+  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .about {
+    padding: 0;
+  }
+}
+.home .row img {
+  float: right;
+}
+.home .row .pull-left img {
+  float: left;
+}
+.jumbotron {
+  background: #010222 url('../_assets/home-hero.jpg') no-repeat;
+  color: #fff;
+}
+.jumbotron img {
+  border-radius: 2rem;
+  max-width: 100%;
+}
+.jumbotron blockquote {
+  border-left: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+.jumbotron blockquote:before,
+.jumbotron blockquote:after {
+  color: #ccc;
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+.jumbotron blockquote:before {
+  content: open-quote;
+}
+.jumbotron blockquote:after {
+  content: close-quote;
+}
+.jumbotron cite {
+  display: block;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 4rem;
+}
+.jumbotron .signup {
+  text-align: center;
+}
+.jumbotron .signup label {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.jumbotron .signup input[type="email"] {
+  border: 0;
+  border-radius: 4px;
+  color: #333;
+  display: inline-block;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1.5rem;
+}
+.jumbotron .signup .clear {
+  display: inline-block;
+}
+.navbar .logo {
+  float: left;
+  padding-top: 1.5rem;
+}
+.navbar-nav {
+  float: right;
+}
+.navbar a {
+  font-size: 1.8rem;
+}
+.navbar-toggle {
+  background-color: #b8cad2;
+  border: 1px solid #b8cad2;
+}
+.blog  {
+  font-size: 1.6rem;
+  color: #000;
+  background-color: #FFF;
+  margin-bottom: 8px;
+}
+.blog h1 {
+  font-size: 3.2rem;
+}
+.blog h2 {
+  font-size: 2rem;
+}
+.blog h3 {
+  font-size: 1.6rem;
+}
+.blog h4 {
+  font-size: 1.4rem;
+}
+.blog .row {
+  margin: 1rem 0;
+}
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-left-color: #fee056;
+  border-radius: 3px;
+}
+footer {
+  color: #fff;
+}
+footer section {
+  padding: 3rem 0;
+}
+footer .social {
+  background: url('../_assets/footer-bg.png');
+}
+footer .twitter {
+  background-color: rgba(184, 202, 210, 0.2);
+}
+footer .google {
+  background-color: rgba(218, 120, 61, 0.2);
+}
+footer .copyright {
+  background-color: #c0d376;
+}
+
+/* MailChimp Form Embed Code - Classic - 08/17/2011 */
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button:hover {background-color:#777;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+
+#mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px;}
+#mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
+* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
+#mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
+#mc_embed_signup .mc-field-group input {display:block; width:100%; padding:8px 0; text-indent:2%;}
+#mc_embed_signup .mc-field-group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px;}
+
+#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us{padding:5px 0;}
+#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:center; padding:5px 0 2px 0;}
+#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input{width:40px;}
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
+#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
+
+#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
+#mc_embed_signup .asterisk {color:#c60; font-size:200%;}
+#mc_embed_signup .mc-field-group .asterisk {position:absolute; top:25px; right:10px;}
+#mc_embed_signup .clear {clear:both;text-align: center;}
+
+#mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}
+#mc_embed_signup .mc-field-group.input-group ul li {display:block; padding:3px 0; margin:0;}
+#mc_embed_signup .mc-field-group.input-group label {display:inline;}
+#mc_embed_signup .mc-field-group.input-group input {display:inline; width:auto; border:none;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc-embedded-subscribe {clear:both; width:auto; display:inline;}
+#mc_embed_signup #num-subscribers {font-size:1.1em;}
+#mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
